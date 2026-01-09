@@ -8,5 +8,10 @@ public class tester{
         characterName = name.getName();
 
         System.out.println(characterName);
+
+        name.getNewName('f');
+        characterName = name.getName();
+
+        System.out.println(characterName);
     }
 }
