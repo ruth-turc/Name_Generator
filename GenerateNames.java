@@ -29,8 +29,8 @@ public class GenerateNames{
         return name;
     }
 
-    public void GetNewName(char newGender){
+    public void getNewName(char newGender){
         gender = newGender;
-        setName();
+        name = setName();
     }
 }
