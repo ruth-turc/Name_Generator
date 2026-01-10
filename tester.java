@@ -1,17 +1,33 @@
+
+import javax.swing.SwingUtilities;
+
 public class tester{
+
+    static GenerateNames name;
 
     public static void main(String[] args){
         char gender = 'm';
-        String characterName;
 
-        GenerateNames name = new GenerateNames(gender);
-        characterName = name.getName();
+        name = new GenerateNames(gender);
 
-        System.out.println(characterName);
+        SwingUtilities.invokeLater(() -> {
+            var app = new GUI();
+            app.createAndShowGUI();
+        });
+    }
 
-        name.getNewName('f');
-        characterName = name.getName();
+    public static String sendNameToGUI(){
+        return name.getName();
+    }
 
-        System.out.println(characterName);
+    /*
+    * gets input from the GUI and generates a name with GenerateNames 
+    */
+    public static void getFromGUI(String gender){
+        if (gender.equals("male")){
+            name.getNewName('m');
+        } else if (gender.equals("female")){
+            name.getNewName('f');
+        }
     }
 }
