@@ -25,10 +25,16 @@ public class GenerateNames{
         return newName;
     }
 
+    /*
+    * returns name
+    */
     public String getName(){
         return name;
     }
 
+    /*
+    *  generates a new name
+    */
     public void getNewName(char newGender){
         gender = newGender;
         name = setName();
