@@ -1,6 +1,6 @@
 # Name Generator
 
-As a dungeon master, one of the biggest problems I face is coming up with names on the spot, so I decided to make a simple application that does the hard work for me!
+I have been playing Dungeons and Dragons since middle school, and I have discovered, one of the biggest problems I face is coming up with names on the spot. I know this is a problem other Dungeon Masters run into so, I decided to make a simple application that does the hard work for you. No longer shall we fear the deaded question, "What's your name?"
 
 ### Features:
 * Reads file data to create arraylists
